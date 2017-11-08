@@ -1,0 +1,20 @@
+{  
+   "version":"2",
+   "services":{  
+      "db":{  
+         "image":"mysql",
+         "environment":[  
+            "MYSQL_ROOT_PASSWORD=mypassword"
+         ],
+         "volumes":[  
+            "./db:/docker-entrypoint-initdb.d"
+         ]
+      },
+      "web":{  
+         "build":"./web",
+         "ports":[  
+            "8080:8080"
+         ]
+      }
+   }
+}
