@@ -1,7 +1,7 @@
 {  
    "version":"2",
    "services":{  
-      "db":{  
+      "db":{ 
          "image":"mysql",
          "environment":[  
             "MYSQL_ROOT_PASSWORD=mypassword"
